@@ -1,28 +1,6 @@
-
-  {
-  "data": {
-    "ethereum": {
-      "transfers": [
-        {
-          "currency": {
-            "symbol": "CRPN"
-          },
-          "median": 0.063,
-          "average": 584186.378238574,
-          "amount": 32130250.803121567,
-          "count": 55,
-          "days": 11,
-          "sender_count": 8,
-          "receiver_count": 18,
-          "min_date": "2021-04-23",
-          "max_date": "2021-05-19"
-        }
-      ]
-    }
-  }
-}
-
-
+------------------------------------------------------
+Go to https://graphql.bitquery.io and type in 
+------------------------------------------------------
 query ($network: EthereumNetwork!,
                               $token: String!,
                               $from: ISO8601DateTime,
@@ -53,5 +31,7 @@ query ($network: EthereumNetwork!,
                             }
                           }
                         }
-                        
+                        ------------------------------------------------------
+                        network
+                        ------------------------------------------------------
                         {"limit":10,"offset":0,"network":"bsc","token":"0x84b2537ef5a872a7c67fb03c6cefc51dd4be3c68"}
